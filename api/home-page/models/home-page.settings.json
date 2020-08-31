@@ -1,0 +1,53 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_pages",
+  "info": {
+    "name": "HomePage"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "textNearImage": {
+      "type": "richtext"
+    },
+    "Images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "leftText": {
+      "type": "richtext"
+    },
+    "centerText": {
+      "type": "richtext"
+    },
+    "rightText": {
+      "type": "richtext"
+    },
+    "supporters": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "bottomLeftText": {
+      "type": "richtext"
+    },
+    "bottomRightText": {
+      "type": "richtext"
+    }
+  }
+}
